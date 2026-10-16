@@ -1,0 +1,15 @@
+[project]
+name = "ComfyUI-VibeVoice-Native"
+description = "A native dependency-free port of Microsoft VibeVoice long-form multi-speaker TTS for ComfyUI."
+version = "1.0.0"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.urls]
+Repository = "https://github.com/Aero-Ex/Aero-Ex-ComfyUI-Vibevoice"
+
+[tool.comfy]
+PublisherId = "aerox"
+DisplayName = "VibeVoice"
+Icon = ""

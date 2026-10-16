@@ -1,0 +1,226 @@
+{
+  "id": "34297fe4-9823-4b5a-a06a-d07ad49b097c",
+  "revision": 0,
+  "last_node_id": 4,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "VibeVoiceLoader",
+      "pos": [
+        930.85949701797,
+        -258.46455137195744
+      ],
+      "size": [
+        438.1789746470024,
+        116.57025426676384
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "showAdvanced": false,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VibeVoiceLoader",
+        "models": [
+          {
+            "name": "vibevoice_7b_int8_convrot.safetensors",
+            "url": "https://huggingface.co/Aero-Ex/ComfyUI-Vibevoice/resolve/main/vibevoice_7b_int8_convrot.safetensors",
+            "directory": "text_encoders"
+          }
+        ]
+      },
+      "widgets_values": [
+        "vibevoice_7b_int8_convrot.safetensors"
+      ],
+      "widgets_values_named": {
+        "model_name": "vibevoice_7b_int8_convrot.safetensors"
+      }
+    },
+    {
+      "id": 2,
+      "type": "VibeVoiceTTS",
+      "pos": [
+        1454.580003501871,
+        -230.11498319161507
+      ],
+      "size": [
+        365.1753893390422,
+        600.5504719710912
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "showAdvanced": true,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1
+        },
+        {
+          "name": "voices.speaker_1",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 3
+        },
+        {
+          "name": "voices.speaker_2",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VibeVoiceTTS"
+      },
+      "widgets_values": [
+        "The lighthouse at the end of the world had not been lit for thirty years, but every evening, just before the sun slipped beneath the grey edge of the sea, Mara climbed its two hundred and twelve steps anyway.\n\nShe had counted them as a child, when her grandfather still kept the lamp. Back then the stairs had seemed endless, a spiral of cold iron that rang under her small shoes like a bell. Now she counted them out of habit, the way some people hum a song they no longer remember the words to.\n\nAt the top, the great lens sat in its brass cradle, dusty and silent. Mara wiped it with the same cloth her grandfather had used, slow circles, patient and careful. He used to say that a lighthouse was not really a building at all. It was a promise. A promise that somewhere out in the dark, someone was paying attention.\n\nThe village below had mostly emptied over the years. The fishing boats grew fewer, then older, then gone. The bakery closed, and then the school, and finally the little station where the evening train used to stop with a tired sigh. People moved to the cities, where the lights never went out and nobody needed a promise from a tower on a rock.\n\nBut Mara stayed. She told herself it was because of the garden, or the cottage, or the stubborn old cat who refused to travel. The truth was simpler, and harder to say out loud. She stayed because leaving felt like breaking the promise.\n\nOn this particular evening, the wind came in sharp and salty from the north. The clouds were low and heavy, the color of wet slate. Out\non the water, the waves had begun to stand up and leys did before a storm. Mara finished wiping the lensand was about to turn for the stairs when she saw it.\nA light. Small, flickering, far out past the reef.At first she thought it was a star caught between twell, and rose again, moving with the swell. A boat. Asmall one, by the look of it, and much too close to better ships than that.\n\nHer heart began to pound. There was no radio in the no way to call the coast guard from up here. Thenearest working phone was in the village, twenty minutes away on foot, and the boat did not have twenty minutes.\n\nMara looked at the lamp.\n\nHer grandfather had shown her how it worked, years ake this one. The fuel tank, the wick, the clockwork\nthat turned the lens. She had been nine years old anng. She had been watching the beam sweep across the\nwater like a great slow hand, and wondering where iter the horizon.\n\nNow she tried to remember. Her fingers found the old valve, stiff with rust. She leaned her whole weight against it until something gave with a groan. The smell of oil rose into the cold air. Somewhere in the base of the tower, a mechanism she did not understand\ncoughed and shuddered.\n\nShe struck a match. It blew out. She struck another,and touched it to the wick.\n\nFor a moment, nothing happened. Then a small blue flame crept along the edge, turned yellow, and grew. The lens caught it and threw it\noutward, magnified a thousand times, a beam of pure .\n\nThe clockwork began to turn.\n\nSlowly, the light swept across the sea. Once. Twice.the little boat again, and this time it was turning.Turning away from the reef, away from the rocks, toward the narrow channel her grandfather had always called the safe road home.\n\nShe did not move until the boat reached the harbor. She watched its tiny light bob past the breakwater and finally go still beside the\nempty pier. Only then did she realize she was crying all at once.\n\nThe next morning, a young fisherman knocked on her csted and grateful. He said he had been lost in the\nstorm, certain he was finished, and then the old ligomething out of a story.\n\nMara made him tea and did not tell him that she had  someone to need it.\n\nThat evening, she climbed the two hundred and twelvewhen the sun went down, she lit the lamp.",
+        782819148911551,
+        "randomize",
+        1.3,
+        10,
+        240
+      ],
+      "widgets_values_named": {
+        "text": "The lighthouse at the end of the world had not been lit for thirty years, but every evening, just before the sun slipped beneath the grey edge of the sea, Mara climbed its two hundred and twelve steps anyway.\n\nShe had counted them as a child, when her grandfather still kept the lamp. Back then the stairs had seemed endless, a spiral of cold iron that rang under her small shoes like a bell. Now she counted them out of habit, the way some people hum a song they no longer remember the words to.\n\nAt the top, the great lens sat in its brass cradle, dusty and silent. Mara wiped it with the same cloth her grandfather had used, slow circles, patient and careful. He used to say that a lighthouse was not really a building at all. It was a promise. A promise that somewhere out in the dark, someone was paying attention.\n\nThe village below had mostly emptied over the years. The fishing boats grew fewer, then older, then gone. The bakery closed, and then the school, and finally the little station where the evening train used to stop with a tired sigh. People moved to the cities, where the lights never went out and nobody needed a promise from a tower on a rock.\n\nBut Mara stayed. She told herself it was because of the garden, or the cottage, or the stubborn old cat who refused to travel. The truth was simpler, and harder to say out loud. She stayed because leaving felt like breaking the promise.\n\nOn this particular evening, the wind came in sharp and salty from the north. The clouds were low and heavy, the color of wet slate. Out\non the water, the waves had begun to stand up and leys did before a storm. Mara finished wiping the lensand was about to turn for the stairs when she saw it.\nA light. Small, flickering, far out past the reef.At first she thought it was a star caught between twell, and rose again, moving with the swell. A boat. Asmall one, by the look of it, and much too close to better ships than that.\n\nHer heart began to pound. There was no radio in the no way to call the coast guard from up here. Thenearest working phone was in the village, twenty minutes away on foot, and the boat did not have twenty minutes.\n\nMara looked at the lamp.\n\nHer grandfather had shown her how it worked, years ake this one. The fuel tank, the wick, the clockwork\nthat turned the lens. She had been nine years old anng. She had been watching the beam sweep across the\nwater like a great slow hand, and wondering where iter the horizon.\n\nNow she tried to remember. Her fingers found the old valve, stiff with rust. She leaned her whole weight against it until something gave with a groan. The smell of oil rose into the cold air. Somewhere in the base of the tower, a mechanism she did not understand\ncoughed and shuddered.\n\nShe struck a match. It blew out. She struck another,and touched it to the wick.\n\nFor a moment, nothing happened. Then a small blue flame crept along the edge, turned yellow, and grew. The lens caught it and threw it\noutward, magnified a thousand times, a beam of pure .\n\nThe clockwork began to turn.\n\nSlowly, the light swept across the sea. Once. Twice.the little boat again, and this time it was turning.Turning away from the reef, away from the rocks, toward the narrow channel her grandfather had always called the safe road home.\n\nShe did not move until the boat reached the harbor. She watched its tiny light bob past the breakwater and finally go still beside the\nempty pier. Only then did she realize she was crying all at once.\n\nThe next morning, a young fisherman knocked on her csted and grateful. He said he had been lost in the\nstorm, certain he was finished, and then the old ligomething out of a story.\n\nMara made him tea and did not tell him that she had  someone to need it.\n\nThat evening, she climbed the two hundred and twelvewhen the sun went down, she lit the lamp.",
+        "seed": 782819148911551,
+        "control_after_generate": "randomize",
+        "cfg_scale": 1.3,
+        "steps": 10,
+        "max_duration": 240
+      }
+    },
+    {
+      "id": 3,
+      "type": "PreviewAudio",
+      "pos": [
+        1883.3552240434465,
+        -232.77225695351905
+      ],
+      "size": [
+        331.986800138598,
+        112.8600173614445
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 4,
+      "type": "LoadAudio",
+      "pos": [
+        947.030451542357,
+        -84.09047753860868
+      ],
+      "size": [
+        433.13662868170246,
+        138.00876677975077
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "seedtts_ref_en_1.wav",
+        ""
+      ],
+      "widgets_values_named": {
+        "audio": "seedtts_ref_en_1.wav",
+        "upload": ""
+      }
+    }
+  ],
+  "links": [
+    [
+      2,
+      2,
+      0,
+      3,
+      0,
+      "AUDIO"
+    ],
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "CLIP"
+    ],
+    [
+      3,
+      4,
+      0,
+      2,
+      1,
+      "AUDIO"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5706051567347508,
+      "offset": [
+        -647.1594279204578,
+        725.6196011841204
+      ]
+    },
+    "frontendVersion": "1.55.17",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
