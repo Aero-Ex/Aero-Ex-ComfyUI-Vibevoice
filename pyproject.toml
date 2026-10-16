@@ -1,7 +1,7 @@
 [project]
 name = "ComfyUI-VibeVoice-Native"
 description = "A native dependency-free port of Microsoft VibeVoice long-form multi-speaker TTS for ComfyUI."
-version = "1.0.0"
+version = "1.0.1"
 license = "MIT"
 readme = "README.md"
 requires-python = ">=3.10"

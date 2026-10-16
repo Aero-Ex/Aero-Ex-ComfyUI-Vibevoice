@@ -1,15 +1,15 @@
 {
   "id": "34297fe4-9823-4b5a-a06a-d07ad49b097c",
   "revision": 0,
-  "last_node_id": 4,
+  "last_node_id": 5,
   "last_link_id": 3,
   "nodes": [
     {
       "id": 1,
       "type": "VibeVoiceLoader",
       "pos": [
-        930.85949701797,
-        -258.46455137195744
+        879.452069027453,
+        -358.7090225827583
       ],
       "size": [
         438.1789746470024,
@@ -30,14 +30,7 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "VibeVoiceLoader",
-        "models": [
-          {
-            "name": "vibevoice_7b_int8_convrot.safetensors",
-            "url": "https://huggingface.co/Aero-Ex/ComfyUI-Vibevoice/resolve/main/vibevoice_7b_int8_convrot.safetensors",
-            "directory": "text_encoders"
-          }
-        ]
+        "Node name for S&R": "VibeVoiceLoader"
       },
       "widgets_values": [
         "vibevoice_7b_int8_convrot.safetensors"
@@ -50,15 +43,15 @@
       "id": 2,
       "type": "VibeVoiceTTS",
       "pos": [
-        1454.580003501871,
-        -230.11498319161507
+        1457.766342501616,
+        -298.0917032759109
       ],
       "size": [
         365.1753893390422,
         600.5504719710912
       ],
       "flags": {},
-      "order": 2,
+      "order": 3,
       "mode": 0,
       "showAdvanced": true,
       "inputs": [
@@ -113,15 +106,15 @@
       "id": 3,
       "type": "PreviewAudio",
       "pos": [
-        1883.3552240434465,
-        -232.77225695351905
+        1944.8011503808702,
+        -271.07621879704715
       ],
       "size": [
         331.986800138598,
         112.8600173614445
       ],
       "flags": {},
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -147,8 +140,8 @@
       "id": 4,
       "type": "LoadAudio",
       "pos": [
-        947.030451542357,
-        -84.09047753860868
+        881.4860142812161,
+        -171.48307838107297
       ],
       "size": [
         433.13662868170246,
@@ -178,6 +171,32 @@
         "audio": "seedtts_ref_en_1.wav",
         "upload": ""
       }
+    },
+    {
+      "id": 5,
+      "type": "Note",
+      "pos": [
+        905.7935296711078,
+        58.69256689405256
+      ],
+      "size": [
+        406.3454831755621,
+        145.42798748632566
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "model files from: https://huggingface.co/Aero-Ex/ComfyUI-Vibevoice/tree/main\nput them under models/text_encoders"
+      ],
+      "widgets_values_named": {
+        "text": "model files from: https://huggingface.co/Aero-Ex/ComfyUI-Vibevoice/tree/main\nput them under models/text_encoders"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -210,10 +229,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5706051567347508,
+      "scale": 0.8354230099753495,
       "offset": [
-        -647.1594279204578,
-        725.6196011841204
+        -409.30551439843157,
+        411.58531392632113
       ]
     },
     "frontendVersion": "1.55.17",
